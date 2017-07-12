@@ -1,0 +1,87 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Portfolio";
+}
+
+
+
+
+
+<!--gallery-starts-->
+	<div class="gallery agileinfo">
+		<div class="container">
+			<div class="gallery-top heading">
+				<h2>Our Gallery</h2>
+			</div>
+			<section>
+				<ul id="da-thumbs" class="da-thumbs w3layouts">
+					<li>
+						 <a href='@Url.Content("~/Content/images/g1.jpg")' class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+							<img src='@Url.Content("~/Content/images/g1.jpg")' alt="" class="img-responsive">
+							<div>
+								<h5>Prestyle</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='@Url.Content("~/Content/images/g2.jpg")' class="b-link-stripe b-animate-go  swipebox  w3ls"  title="Image Title">
+							<img src='@Url.Content("~/Content/images/g2.jpg")' alt="">
+							<div>
+								<h5>Prestyle</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='@Url.Content("~/Content/images/g3.jpg")' class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+							<img src='@Url.Content("~/Contentimages/g3.jpg")' alt="">
+							<div>
+								<h5>Prestyle</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='@Url.Content("~/Content/images/g4.jpg")' class="b-link-stripe b-animate-go  swipebox w3l"  title="Image Title">
+							<img src='@Url.Content("~/Content/images/g4.jpg")' alt="">
+							<div>
+								<h5>Prestyle</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>
+					<li>	
+						<a href='@Url.Content("~/Content/images/g5.jpg")' class="b-link-stripe b-animate-go  swipebox agileits"  title="Image Title">
+							<img src='@Url.Content("~/Content/images/g5.jpg")' alt="">
+							<div>
+								<h5>Prestyle</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='@Url.Content("~/Content/images/g6.jpg")' class="b-link-stripe b-animate-go  swipebox agileinfo"  title="Image Title">
+							<img src='@Url.Content("~/Content/images/g6.jpg")' alt="">
+							<div>
+								<h5>Prestyle</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>				
+					<div class="clearfix"> </div>
+				</ul>
+			</section>
+				
+		<script type="text/javascript">
+			$(function() {
+			
+				$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+			});
+		</script>
+        </div>
+	</div>
+<!--gallery-end-->

@@ -1,0 +1,143 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "AddProduct";
+}
+@model MvcApplication4.Models.product
+
+
+
+<!--contact strat here-->
+<div class="contact agile">
+   <div class="container">
+	  <div class="contact-main agileits">
+	  	 <div class="contact1-block">
+			 <div class="contac-top  w3l wow bounceInLeft" data-wow-delay="0.3s">
+			 	<h2>Add Product</h2>
+			 </div>
+			<div class="contact-bottom wow bounceInRight" data-wow-delay="0.3s">
+                <h5 style="color:red;">@TempData["msg"] </h5>
+                <br />
+			  <form action="/Admin/AddProduct" method="post" enctype="multipart/form-data">		
+					<div class="contact-grid">
+						<div class="col-md-6 contact-us con-mar"  >
+                            <select  class="form-control" name="gender"  >
+                                <option value="0"> Select Gender</option>
+                                <option>Men</option>
+                                <option>Women</option>
+                            </select>
+						</div>
+                        @Html.ValidationMessageFor(model => model.gender)
+						<br /> <br /> <br />
+                        <div class="col-md-6 contact-us con-mar"  >
+                            <select  class="form-control" name="category">
+                                <option value="0">Select Category</option>
+                                <option>Dresses</option>
+                                <option>Party</option>
+                                <option>Ethnic</option>
+                                <option>Wedding</option>
+                                <option>Shoes</option>
+                                <option>Accessories</option>
+                                <option>Watches</option>
+                                <option>Purse</option>
+                                <option>Suits</option>
+                                <option>Shirts</option>
+                                <option>Sports</option>
+                                <option>Jackets</option>
+                                <option>Shades</option>  
+                            </select>
+						</div>
+                        @Html.ValidationMessageFor(model => model.category)
+                         <br /> <br /> <br />
+						<div class="col-md-6 contact-us con-mar">
+                              <select  class="form-control" name="brand">
+                                <option value="0">Select Brand</option>
+                                  <option>Prada</option>
+                                  <option>GUCCI</option>
+                                  <option>Chanel</option>
+                                  <option>Valentino</option>
+                                  <option>Zara</option>
+                                  <option>Fendi</option>
+                                  <option>Hermes</option>
+                                  <option>Cartier</option>
+                                  <option>H&M</option>
+                                  <option>DIOR</option>
+                                  <option>Burberry</option>
+                                  <option>D.K.N.Y</option>
+                                  <option>Tiffany & Co.</option>
+                                  <option>Balmain</option>
+                                  <option>Mark Jocabs</option>
+                                  
+                                  <option>Rayban</option>
+                                  <option>ZIIIRO</option>
+                                  <option>Ferrari</option>
+                                  <option>SEIKO</option>
+                                  <option>Armani</option>
+                                  <option>Hugo Boss</option>
+                                  <option>Nike</option>
+                                  <option>Lacoste</option>
+                                  <option>Adidas</option>
+                                  <option>Diesel</option>
+                                  <option>Tom Ford</option>
+                                  <option>Vans</option>
+                                  <option>Lee</option>
+                                  <option>Calvin Klein</option>
+                                  <option>Fred Perry</option>
+                                  <option>Bulgari</option>
+                                  <option>Clarks</option>
+                                  <option>Topman</option>
+                                  <option>Helly Hensen</option>
+                                  <option>Brioni</option>
+                                  <option>Champion</option>
+                                  <option>Alfani</option>
+                                  <option>Esprit</option>
+                                  <option>Frye</option>
+                                  <option>Jambu</option>
+                                  <option>A. Link</option>
+                                  <option>Graff</option>
+                                  <option>Bergio</option>
+                                  <option>Takat</option>
+                                  <option>Coach</option>
+                                  <option>Piaget</option>
+                                  <option>Rolex</option>
+                                  <option>Timex</option>
+                                  <option>Kate Spade</option>
+                                  <option>Mulberry</option>
+                                  <option>Versace</option>
+                                  <option>Miu Miu</option>
+                                  <option>Reebok</option>
+                                  <option>Rocky</option>
+                                  <option>Puma</option>
+                                  <option>Reef</option>
+                                  <option>Rayban</option>
+                                  <option>Maui Jim</option>
+                                  <option>Ralph</option>
+                                  <option>Persol</option>
+                                  <option>Rado</option>
+                                  <option>Fossil</option>
+                                  <option>Lanvin</option>
+                                  <option>HEX</option>
+                                  <option>Obey</option>
+                            </select>
+							</div>
+                        @Html.ValidationMessageFor(model => model.brand)
+                         <br /> <br /> <br />
+						<div class="col-md-6 w3 contact-us con-mar">
+							<input type="file"  name="URL"  >
+						</div>
+                       @Html.ValidationMessageFor(model => model.picture)
+					<div class="send">
+                        <br /> <br /> <br />
+						<input type="submit" value="ADD" >
+					</div>
+                        <br /> <br /> <br />
+				</form>
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+	
+	  </div>
+   </div>
+</div>
+<!--contact end here-->

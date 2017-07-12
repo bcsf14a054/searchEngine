@@ -1,0 +1,277 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Products";
+}
+
+
+
+	<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Estelle a Fashion Category Flat Bootstrap Responsive Website Template | Products :: W3layouts</title>
+
+<!-- For-Mobile-Apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Estelle a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //For-Mobile-Apps -->
+
+<!-- Custom-Theme-Files -->
+	<!-- Bootstrap-Default-CSS --> <link href='@Url.Content("../../Content/css/bootstrap.min.css")' rel="stylesheet" />
+	<!-- Pages-Style-CSS --> <link rel="stylesheet" href='@Url.Content("../../Content/css/stylees.css")' type="text/css" media="all" />
+	<!-- Navbar-CSS -->	<link rel="stylesheet" type="text/css" href='@Url.Content("../../Content/css/navbar.css")' />
+	<!-- Product-Slider-CSS -->	<link rel="stylesheet" type="text/css" href='@Url.Content("../../Content/css/product_slider.css")' />
+	<!-- Supporting-JavaScript-File --> <script src='@Url.Content("../../Content/js/modernizr.custom.63321.js")'></script>
+<!-- //Custom-Theme-Files -->
+
+<!-- Web-Fonts -->
+	<link href='//fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900,300' rel='stylesheet' type='text/css'>
+<!-- //Web-Fonts -->
+
+</head>
+<body>
+
+	<div class="products-content">
+		<a href="/Home/Index" class="products">ESTELLE</a>
+		<p class="products">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+		<h1 class="products">PRODUCTS</h1>
+	</div>
+
+	
+	<div class="main" id="womens-wear">
+		<h2>Women's Fashion</h2>
+		<div id="mi-slider" class="mi-slider">
+			<ul>
+				<li><a href="/Home/Prada"><img src='@Url.Content("~/Content/images/h1.jpg")' alt="Estelle"></a><h4>PRADA</h4></li>
+				<li><a href="/Home/Gucci"><img src='@Url.Content("~/Content/images/h2.jpg")' alt="Estelle"></a><h4>GUCCI</h4></li>
+				<li><a href="/Home/Chanel"><img src='@Url.Content("~/Content/images/h3.jpg")' alt="Estelle"></a><h4>CHANEL</h4></li>
+				<li><a href="/Home/Valentino"><img src='@Url.Content("~/Content/images/h4.jpg")' alt="Estelle"></a><h4>VALENTINO</h4></li>
+			</ul>
+			<ul>
+				<li><a href="/Home/Armani"><img src='@Url.Content("~/Content/images/party1.jpg")' alt="Estelle"></a><h4>ARMANI</h4></li>
+				<li><a href="/Home/Zara"><img src='@Url.Content("~/Content/images/party2.jpg")' alt="Estelle"></a><h4>ZARA</h4></li>
+				<li><a href="/Home/Fendi"><img src='@Url.Content("~/Content/images/party3.jpg")' alt="Estelle"></a><h4>FENDI</h4></li>
+				<li><a href="/Home/Hermes"><img src='@Url.Content("~/Content/images/party4.jpg")' alt="Estelle"></a><h4>HERMES</h4></li>
+			</ul>
+			<ul>
+				<li><a href="/Home/Cartier"><img src='@Url.Content("~/Content/images/product1.jpg")' alt="Estelle"></a><h4>CARTIER</h4></li>
+				<li><a href="/Home/Hm"><img src='@Url.Content("~/Content/images/product2.jpg")' alt="Estelle"></a><h4>H&M</h4></li>
+				<li><a href="/Home/Dior"><img src='@Url.Content("~/Content/images/product3.jpg")' alt="Estelle"></a><h4>DIOR</h4></li>
+				<li><a href="/Home/Burberry"><img src='@Url.Content("~/Content/images/product4.jpg")' alt="Estelle"></a><h4>BURBERRY</h4></li>
+			</ul>
+			<ul>
+				<li><a href="/Home/Dkny"><img src='@Url.Content("~/Content/images/wedding1.jpg")' alt="Estelle"></a><h4>D.K.N.Y</h4></li>
+				<li><a href="/Home/Tiffany"><img src='@Url.Content("~/Content/images/wedding2.jpg")' alt="Estelle"></a><h4>TIFFANY & CO.</h4></li>
+				<li><a href="/Home/Balmain"><img src='@Url.Content("~/Content/images/wedding3.jpg")' alt="Estelle"></a><h4>BALMAIN</h4></li>
+				<li><a href="/Home/Mark"><img src='@Url.Content("~/Content/images/wedding4.jpg")' alt="Estelle"></a><h4>MARK JACOBS</h4></li>
+			</ul>
+			<nav>
+				<a href="#">Dresses</a>
+				<a href="#">Party</a>
+				<a href="#">Ethnic</a>
+				<a href="#">Wedding</a>
+			</nav>
+		</div>
+		<script src='@Url.Content("~/Content/js/product_jquery.min.js")'></script>
+		<script src='@Url.Content("~/Content/js/jquery.catslider.js")'></script>
+		<script>
+		    $(function () {
+		        $('#mi-slider').catslider();
+		    });
+		</script>
+	</div>
+
+	<div class="main main-2" id="womens-wear1">
+		<div id="mi-slider1" class="mi-slider">
+			<ul>
+				<li><a href="/Home/Alfani"><img src='@Url.Content("~/Content/images/shoes1.jpg")' alt="Estelle"></a><h4>ALFANI</h4></li>
+				<li><a href="/Home/Esprit"><img src='@Url.Content("~/Content/images/shoes2.jpg")' alt="Estelle"></a><h4>ESPRIT</h4></li>
+				<li><a href="/Home/Frye"><img src='@Url.Content("~/Content/images/shoes3.jpg")' alt="Estelle"></a><h4>FRYE</h4></li>
+				<li><a href="/Home/Jambu"><img src='@Url.Content("~/Content/images/shoes4.jpg")' alt="Estelle"></a><h4>JAMBU</h4></li>
+			</ul>
+			<ul>
+				<li><a href="/Home/Link"><img src='@Url.Content("~/Content/images/accessory1.jpg")' alt="Estelle"></a><h4>A. LINK</h4></li>
+				<li><a href="/Home/Graff"><img src='@Url.Content("~/Content/images/accessory2.jpg")' alt="Estelle"></a><h4>GRAFF</h4></li>
+				<li><a href="/Home/Bergio"><img src='@Url.Content("~/Content/images/accessory3.jpg")' alt="Estelle"></a><h4>BERGIO</h4></li>
+				<li><a href="/Home/Takat"><img src='@Url.Content("~/Content/images/accessory4.jpg")' alt="Estelle"></a><h4>TAKAT</h4></li>
+			</ul>
+			<ul>
+				<li><a href="/Home/Coach"><img src='@Url.Content("~/Content/images/watch1.jpg")' alt="Estelle"></a><h4>COACH</h4></li>
+				<li><a href="/Home/Piaget"><img src='@Url.Content("~/Content/images/watch2.jpg")' alt="Estelle"></a><h4>PIAGET</h4></li>
+				<li><a href="/Home/Rolex"><img src='@Url.Content("~/Content/images/watch3.jpg")' alt="Estelle"></a><h4>ROLEX</h4></li>
+				<li><a href="/Home/Timex"><img src='@Url.Content("~/Content/images/watch4.jpg")' alt="Estelle"></a><h4>TIMEX</h4></li>
+			</ul>
+			<ul>
+				<li><a href="/Home/Kate"><img src='@Url.Content("~/Content/images/purse1.jpg")' alt="Estelle"></a><h4>KATE SPADE</h4></li>
+				<li><a href="/Home/Mulberry"><img src='@Url.Content("~/Content/images/purse2.jpg")' alt="Estelle"></a><h4>MULBERRY</h4></li>
+				<li><a href="/Home/Versace"><img src='@Url.Content("~/Content/images/purse3.jpg")' alt="Estelle"></a><h4>VERSACE</h4></li>
+				<li><a href="/Home/Miu"><img src='@Url.Content("~/Content/images/purse4.jpg")' alt="Estelle"></a><h4>MIU MIU</h4></li>
+			</ul>
+			<nav>
+				<a href="#">Shoes</a>
+				<a href="#">Accessories</a>
+				<a href="#">Watches</a>
+				<a href="#">Purse</a>
+			</nav>
+		</div>
+        <script src='@Url.Content("~/Content/js/product_jquery.min.js")'></script>
+		<script src='@Url.Content("~/Content/js/jquery.catslider.js")'></script>
+		<script>
+		    $(function () {
+		        $('#mi-slider1').catslider();
+		    });
+		</script>
+	</div>
+
+	<div class="main main-2" id="mens-wear">
+		<h2>Men's Fashion</h2>
+		<div id="mi-slider2" class="mi-slider">
+			<ul>
+				<li><a href="/Home/Hugo"><img src='@Url.Content("~/Content/images/suit1.jpg")' alt="Estelle"></a><h4>HUGO BOSS</h4></li>
+				<li><a href="/Home/Nike"><img src='@Url.Content("~/Content/images/suit2.jpg")' alt="Estelle"></a><h4>NIKE</h4></li>
+				<li><a href="/Home/Lacoste"><img src='@Url.Content("~/Content/images/suit3.jpg")' alt="Estelle"></a><h4>LACOSTE</h4></li>
+				<li><a href="/Home/Adidas"><img src='@Url.Content("~/Content/images/suit4.jpg")' alt="Estelle"></a><h4>ADIDAS</h4></li>
+			</ul>
+			<ul>
+				<li><a href="/Home/Diesel"><img src='@Url.Content("~/Content/images/shirt1.jpg")' alt="Estelle"></a><h4>DIESEL</h4></li>
+				<li><a href="/Home/Tom"><img src='@Url.Content("~/Content/images/shirt2.jpg")' alt="Estelle"></a><h4>TOM FORD</h4></li>
+				<li><a href="/Home/Vans"><img src='@Url.Content("~/Content/images/shirt3.jpg")' alt="Estelle"></a><h4>VANS</h4></li>
+				<li><a href="/Home/Lee"><img src='@Url.Content("~/Content/images/shirt4.jpg")' alt="Estelle"></a><h4>LEE</h4></li>
+			</ul>
+			<ul>
+				<li><a href="/Home/Calvin"><img src='@Url.Content("~/Content/images/sport1.jpg")' alt="Estelle"></a><h4>CALVIN KLEIN</h4></li>
+				<li><a href="/Home/Fred"><img src='@Url.Content("~/Content/images/sport2.jpg")' alt="Estelle"></a><h4>FRED PERRY</h4></li>
+				<li><a href="/Home/Bulgari"><img src='@Url.Content("~/Content/images/sport3.jpg")' alt="Estelle"></a><h4>BULGARI</h4></li>
+				<li><a href="/Home/Clarks"><img src='@Url.Content("~/Content/images/sport4.jpg")' alt="Estelle"></a><h4>CLARKS</h4></li>
+			</ul>
+			<ul>
+				<li><a href="/Home/Topman"><img src='@Url.Content("~/Content/images/jacket1.jpg")' alt="Estelle"></a><h4>TOPMAN</h4></li>
+				<li><a href="/Home/Helly"><img src='@Url.Content("~/Content/images/jacket2.jpg")' alt="Estelle"></a><h4>HELLY HANSEN</h4></li>
+				<li><a href="/Home/Brioni"><img src='@Url.Content("~/Content/images/jacket3.jpg")' alt="Estelle"></a><h4>BRIONI</h4></li>
+				<li><a href="/Home/Champion"><img src='@Url.Content("~/Content/images/jacket4.jpg")' alt="Estelle"></a><h4>CHAMPION</h4></li>
+			</ul>
+			<nav>
+				<a href="#">Suits</a>
+				<a href="#">Shirts</a>
+				<a href="#">Sports</a>
+				<a href="#">Jackets</a>
+			</nav>
+		</div>
+		<script src='@Url.Content("~/Content/js/product_jquery.min.js")'></script>
+		<script src='@Url.Content("~/Content/js/jquery.catslider.js")'></script>
+		<script>
+		    $(function () {
+		        $('#mi-slider2').catslider();
+		    });
+		</script>
+	</div>
+
+	<div class="main main-2">
+		<div id="mi-slider3" class="mi-slider">
+			<ul>
+				<li><a href="/Home/Reebok"><img src='@Url.Content("~/Content/images/boots1.jpg")' alt="Estelle"></a><h4>REEBOK</h4></li>
+				<li><a href="/Home/Rocky"><img src='@Url.Content("~/Content/images/boots2.jpg")' alt="Estelle"></a><h4>ROCKY</h4></li>
+				<li><a href="/Home/Puma"><img src='@Url.Content("~/Content/images/boots3.jpg")' alt="Estelle"></a><h4>PUMA</h4></li>
+				<li><a href="/Home/Reef"><img src='@Url.Content("~/Content/images/boots4.jpg")' alt="Estelle"></a><h4>REEF</h4></li>
+			</ul>
+			<ul>
+				<li><a href="/Home/Rayban"><img src='@Url.Content("~/Content/images/glasses1.jpg")' alt="Estelle"></a><h4>RAYBAN</h4></li>
+				<li><a href="/Home/Maui"><img src='@Url.Content("~/Content/images/glasses2.jpg")' alt="Estelle"></a><h4>MAUI JIM</h4></li>
+				<li><a href="/Home/Ralph"><img src='@Url.Content("~/Content/images/glasses3.jpg")' alt="Estelle"></a><h4>RALPH</h4></li>
+				<li><a href="/Home/Persol"><img src='@Url.Content("~/Content/images/glasses4.jpg")' alt="Estelle"></a><h4>PERSOL</h4></li>
+			</ul>
+			<ul>
+				<li><a href="/Home/Ziiiro"><img src='@Url.Content("~/Content/images/watches1.jpg")' alt="Estelle"></a><h4>ZIIIRO</h4></li>
+				<li><a href="/Home/Ferrari"><img src='@Url.Content("~/Content/images/watches2.jpg")' alt="Estelle"></a><h4>FERRARI</h4></li>
+				<li><a href="/Home/Rado"><img src='@Url.Content("~/Content/images/watches3.jpg")' alt="Estelle"></a><h4>RADO</h4></li>
+				<li><a href="/Home/Seiko"><img src='@Url.Content("~/Content/images/watches4.jpg")' alt="Estelle"></a><h4>SEIKO</h4></li>
+			</ul>
+			<ul>
+				<li><a href="/Home/Fossil"><img src='@Url.Content("~/Content/images/accessories1.jpg")' alt="Estelle"></a><h4>FOSSIL</h4></li>
+				<li><a href="/Home/Lanvin"><img src='@Url.Content("~/Content/images/accessories2.jpg")' alt="Estelle"></a><h4>LANVIN</h4></li>
+				<li><a href="/Home/Hex"><img src='@Url.Content("~/Content/images/accessories3.jpg")' alt="Estelle"></a><h4>HEX</h4></li>
+				<li><a href="/Home/Obey"><img src='@Url.Content("~/Content/images/accessories4.jpg")' alt="Estelle"></a><h4>OBEY</h4></li>
+			</ul>
+			<nav>
+				<a href="#">Shoes</a>
+				<a href="#">Shades</a>
+				<a href="#">Watches</a>
+				<a href="#">Accessories</a>
+			</nav>
+		</div>
+		
+		<script src='@Url.Content("~/Content/js/product_jquery.min.js")'></script>
+		<script src='@Url.Content("~/Content/js/jquery.catslider.js")'></script>
+		<script>
+		    $(function () {
+		        $('#mi-slider3').catslider();
+		    });
+		</script>
+	</div>
+
+	
+
+	<!-- //Footer -->
+
+<!-- Custom-JavaScript-File-Links -->
+
+	<!-- Default-Supportive-JavaScript --> <script type="text/javascript" src='@Url.Content("~/js/jquery.min.js")'></script>
+	<!-- Default-JavaScript-File-For-Bootstrap --> <script type="text/javascript" src='@Url.Content("~/js/bootstrap.min.js")'></script>
+
+	<!-- Navbar-JavaScript --> <script src='@Url.Content("~/js/classie.js")'></script>
+	<!-- Navbar-JavaScript --> <script src='@Url.Content("~/js/borderMenu.js")'></script>
+
+	<!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        var defaults = {
+	            containerID: 'toTop', // fading element id
+	            containerHoverID: 'toTopHover', // fading element hover id
+	            scrollSpeed: 100,
+	            easingType: 'linear'
+	        };
+	        $().UItoTop({ easingType: 'easeOutQuart' });
+	    });
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //Slide-To-Top JavaScript -->
+
+	<!-- Product-Slider-JavaScript -->
+	<script src='@Url.Content("~/js/product_jquery.min.js")'></script>
+	<script src='@Url.Content("~/js/jquery.catslider.js")'></script>
+	<script>
+	    $(function () {
+	        $('#mi-slider1').catslider();
+	    });
+	</script>
+	<!-- //Product-Slider-JavaScript -->
+
+	<!-- Smooth-Scrolling-JavaScript -->
+	<script type="text/javascript" src='@Url.Content("~/js/move-top.js")'></script>
+	<script type="text/javascript" src='@Url.Content("~/js/easing.js")'></script>
+	<script type="text/javascript">
+	    jQuery(document).ready(function ($) {
+	        $(".scroll, .navbar li a").click(function (event) {
+	            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+	        });
+	    });
+	</script>
+	<!-- //Smooth-Scrolling-JavaScript -->
+
+<!-- //Custom-JavaScript-File-Links -->
+
+</body>
+</html>

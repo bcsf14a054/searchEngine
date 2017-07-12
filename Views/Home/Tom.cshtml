@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Tom";
+}
+
+ @model List<MvcApplication4.Models.product>
+                  
+
+<!--gallery-starts-->
+	<div class="gallery agileinfo">
+		<div class="container">
+			<div class="gallery-top heading">
+				<h2>TOM FORD</h2>
+			</div>
+			<section>
+				<ul id="da-thumbs" class="da-thumbs w3layouts">
+                    @foreach(var item in Model)
+                    {
+					<li>
+						 	<img src="~/Images/@item.picture" alt="" class="img-responsive">
+							<div>
+								<h5>@item.brand</h5>
+							</div>
+					
+					</li>
+                    }
+				</ul>
+                <div class="clearfix"> </div>
+			</section>
+				
+		<script type="text/javascript">
+		    $(function () {
+
+		        $(' #da-thumbs > li ').each(function () { $(this).hoverdir(); });
+
+		    });
+		</script>
+        </div>
+	</div>
+<!--gallery-end-->
